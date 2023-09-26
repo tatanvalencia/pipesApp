@@ -28,7 +28,7 @@ export class MenuComponent {
             separator: true
           },
           {
-            label: 'No comumes',
+            label: 'No comunes',
             icon: 'pi pi-globe',
             routerLink: 'uncommon'
           }
@@ -39,8 +39,9 @@ export class MenuComponent {
         icon: 'pi pi-cog',
         items: [
           {
-            label: 'Otro elemento',
-            icon: 'pi pi-align-left'
+            label: 'Custom pipes',
+            icon: 'pi pi-align-left',
+            routerLink: 'custom'
           }
         ]
       },

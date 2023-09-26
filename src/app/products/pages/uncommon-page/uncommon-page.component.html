@@ -47,6 +47,8 @@
 
       <pre *ngIf="!(promiseValue | async)">Resolviendo promesa...</pre>
       <pre>{{promiseValue | async}}</pre>
+      <p-toast [breakpoints]="{'920px': {width: '100%', right: '0', left: '0'}}"></p-toast>
+      <button type="button" pButton pRipple (click)="show()" label="Show" class="p-button-success"></button>
     </p-fieldset>
   </div>
 </div>

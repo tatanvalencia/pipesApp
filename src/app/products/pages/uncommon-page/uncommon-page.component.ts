@@ -1,12 +1,16 @@
 import { Component } from '@angular/core';
+import { MessageService } from 'primeng/api';
 import { Observable, interval, tap } from 'rxjs';
 
 @Component({
   selector: 'app-uncommon-page',
   templateUrl: './uncommon-page.component.html',
-  styleUrls: ['./uncommon-page.component.css']
+  styleUrls: ['./uncommon-page.component.css'],
+  providers: [MessageService]
 })
 export class UncommonPageComponent {
+
+  constructor(private messageService: MessageService) { }
 
   //i18nSelect
   public name: string = 'Jhonatan'
@@ -51,4 +55,8 @@ export class UncommonPageComponent {
       resolve('Tenemos data en la promesa');
     }, 3500);
   });
+
+  show() {
+    this.messageService.add({ severity: 'success', summary: 'Success', detail: 'Message Content' });
+  }
 }

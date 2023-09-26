@@ -7,6 +7,10 @@ import { InputTextModule } from 'primeng/inputtext';
 import { MenuModule } from 'primeng/menu';
 import { MenubarModule } from 'primeng/menubar';
 import { PanelModule } from 'primeng/panel';
+import { TableModule } from 'primeng/table';
+import { TagModule } from 'primeng/tag';
+import { ToastModule } from 'primeng/toast';
+import { ToolbarModule } from 'primeng/toolbar';
 
 @NgModule({
   exports: [
@@ -14,9 +18,13 @@ import { PanelModule } from 'primeng/panel';
     CardModule,
     FieldsetModule,
     InputTextModule,
-    MenuModule,
     MenubarModule,
-    PanelModule
+    MenuModule,
+    PanelModule,
+    TableModule,
+    TagModule,
+    ToastModule,
+    ToolbarModule
   ]
 })
 export class PrimeNgModule { }
